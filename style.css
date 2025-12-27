@@ -15,8 +15,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 18px 40px;
-    background-color: #e6f4ec;
-    border-bottom: 1px solid #d3eadf;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e3efe8;
 }
 
 .nav-logo {
@@ -37,10 +37,17 @@ body {
     text-decoration: none;
     color: #2f6f4f;
     font-weight: 500;
+
+    background-color: rgba(159, 211, 181, 0.35); /* semi-transparent green */
+    padding: 8px 16px;
+    border-radius: 20px;
+
+    transition: background-color 0.3s ease;
 }
 
+
 .nav-links a:hover {
-    text-decoration: underline;
+    background-color: rgba(159, 211, 181, 0.55);
 }
 
 /* ===== HEADER ===== */
@@ -112,6 +119,7 @@ footer {
     font-size: 14px;
     color: #6b8f7b;
 }
+
 
 
 
