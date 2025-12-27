@@ -1,1 +1,125 @@
+<nav class="navbar">
+    <div class="nav-logo">UniHelp NZ</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</nav>
+/* ===== GLOBAL STYLES ===== */
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4faf6; /* very light green */
+    color: #2f3e34;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background-color: #e6f4ec;
+    border-bottom: 1px solid #d3eadf;
+}
+
+.nav-logo {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2f6f4f;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2f6f4f;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* ===== HEADER ===== */
+
+header {
+    background-color: #dff1e6;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #2f6f4f;
+}
+
+header p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* ===== MAIN CONTENT ===== */
+
+main {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+main p {
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+/* ===== BUTTONS ===== */
+
+button {
+    background-color: #9fd3b5;
+    color: #1f3d2b;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+button:hover {
+    background-color: #8bc5a6;
+}
+
+/* ===== FORMS (QUIZ) ===== */
+
+form p {
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 14px;
+    color: #6b8f7b;
+}
+
 
