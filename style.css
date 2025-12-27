@@ -1,12 +1,3 @@
-<nav class="navbar">
-    <div class="nav-logo">UniHelp NZ</div>
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="quiz.html">Quiz</a></li>
-        <li><a href="about.html">About</a></li>
-    </ul>
-</nav>
-/* ===== GLOBAL STYLES ===== */
 
 body {
     font-family: "Segoe UI", Arial, sans-serif;
@@ -121,5 +112,6 @@ footer {
     font-size: 14px;
     color: #6b8f7b;
 }
+
 
 
