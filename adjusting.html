@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adjusting to Uni Life</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        
+        <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="stories.html">Stories</a></li>
+    <li><a href="academic.html">Academic Help</a></li>
+    <li><a href="adjusting.html">Adjusting to Uni Life</a></li>
+    <li><a href="figuring.html">Figuring out your career path</a></li>
+    <li><a href="which-uni.html">Which Uni should I go to?</a></li>
+    <li><a href="about.html">About</a></li>
+</ul>
+    </nav>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Adjusting to Uni Life</h1>
+        <p>
+            Starting uni can feel overwhelming in different ways.
+            Click what feels hardest right now for you or something you feel will be challenging for you when you start university.
+        </p>
+    </header>
+
+    <!-- MAIN -->
+    <main class="adjusting-container">
+
+        <h2>Which part of uni feels toughest for you?</h2>
+
+        <!-- BUTTONS -->
+        <div class="challenge-buttons">
+            <button onclick="showSolution('lonely')">Feeling lonely</button>
+            <button onclick="showSolution('academic')">Academic pressure</button>
+            <button onclick="showSolution('overwhelmed')">Feeling overwhelmed</button>
+            <button onclick="showSolution('balance')">Balancing everything</button>
+            <button onclick="showSolution('confidence')">Doubting myself</button>
+        </div>
+
+        <!-- SOLUTIONS -->
+        <div class="solutions">
+
+            <div id="lonely" class="solution-box">
+                <h3>Feeling lonely</h3>
+                <p>
+                    Feeling lonely at uni is far more common than people admit...especially at the start.
+                    Making friends doesn’t happen instantly, and that’s okay.
+                </p>
+                <ul>
+                    <li>Join clubs or societies that genuinely interest you (even quietly at first)</li>
+                    <li>Reach out to student wellbeing or peer support if loneliness feels heavy</li>
+                    <li>Here are some links that can give you information on different universities' clubs:</li>
+                    <p>
+                    <a href="https://www.auckland.ac.nz/en/on-campus/life-on-campus/clubs-societies.html"
+                    target="_blank" rel="noopener noreferrer">
+                    - UoA Clubs
+                    </a><br>
+
+                    <a href="https://www.aut.ac.nz/student-life/around-campus/clubs-and-activities"
+                    target="_blank" rel="noopener noreferrer">
+                    - AUT Clubs
+                </a><br>
+
+                    <a href="https://www.otago.ac.nz/studentservices/otherservices/clubs-and-societies"
+                    target="_blank" rel="noopener noreferrer">
+                        - Otago University Clubs
+                    </a>
+                    </p>
+
+                </ul>
+            </div>
+
+            <div id="academic" class="solution-box">
+                <h3>Academic pressure</h3>
+                <p>
+                    Uni learning is very different from school and struggling does not mean you’re not capable.
+                    It usually means you’re adjusting.
+                </p>
+                <ul>
+                    <li>Check out the <a href="academic.html">Academic Help</a> section for study tips, support, and sources</li>
+                    <li>Use learning advisors and student hubs early, not only when things feel bad</li>
+                    <li>Ask questions, even if they feel “basic”</li>
+                </ul>
+            </div>
+
+            <div id="overwhelmed" class="solution-box">
+                <h3>Feeling overwhelmed</h3>
+                <p>
+                    Uni throws a lot at you at once: systems, deadlines, emails, expectations.
+                    Feeling overwhelmed doesn’t mean you’re failing.
+                </p>
+                <ul>
+                    <li>Break tasks into smaller steps (week by week, not semester-wide)</li>
+                    <li>Use planners or digital calendars to externalise your workload</li>
+                    <li>Remember: doing less, consistently, is better than burning out</li>
+                    <li>Here are some links to mental health services that universities provide for students:</li>
+                    <a href="https://www.aut.ac.nz/student-life/student-health-and-wellbeing/counselling-and-mental-health-support" target="_blank" rel="noopener nonreferrer">- AUT Mental Health Support</a><br>
+                    <a href="https://www.auckland.ac.nz/en/students/student-support/personal-support/student-health-counselling.html" target="_blank" rel="noopener nonreferrer"> - UoA Mental Health Support</a><br>
+                    <a href="https://www.waikato.ac.nz/students/health-wellbeing/student-health/mental-health/" target="_blank" rel="noopener nonreferrer">- Waikato Mental Health Support</a><br>
+                    <a href="https://www.otago.ac.nz/studenthealth/services-we-provide/mental-health-and-wellbeing" target="_blank" rel="noopener nonreferrer">- Otago University Mental Health Support</a>
+                </ul>
+            </div>
+
+            <div id="balance" class="solution-box">
+                <h3>Balancing everything</h3>
+                <p>
+                    Balancing study, work, family, and rest is one of the hardest parts of uni life.
+                    There’s no perfect formula.
+                </p>
+                <ul>
+                    <li>It’s okay to reduce work hours if possible during heavy study periods</li>
+                    <li>Rest is productive and burnout is not</li>
+                    <li>Check what flexibility your university offers</li>
+                </ul>
+            </div>
+
+            <div id="confidence" class="solution-box">
+                <h3>Doubting myself</h3>
+                <p>
+                    Many students experience imposter syndrome.... even high-achievers.
+                    Feeling unsure doesn’t mean you don’t belong.
+                </p>
+                <ul>
+                    <li>Progress at uni is rarely linear</li>
+                    <li>Compare yourself to your past self, not others</li>
+                    <li>Confidence grows through experience, not perfection</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        function showSolution(id) {
+            const allSolutions = document.querySelectorAll(".solution-box");
+
+            allSolutions.forEach(box => {
+                box.style.display = "none";
+            });
+
+            document.getElementById(id).style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
