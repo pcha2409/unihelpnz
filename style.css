@@ -29,26 +29,28 @@ body {
     list-style: none;
     display: flex;
     gap: 25px;
-    margin: 0;
+    margin: auto;
     padding: 0;
 }
 
 .nav-links a {
+    display: inline-block;   
     text-decoration: none;
     color: #2f6f4f;
     font-weight: 500;
 
-    background-color: rgba(159, 211, 181, 0.35); /* semi-transparent green */
+    background-color: rgba(159, 211, 181, 0.35);
     padding: 8px 16px;
     border-radius: 0px;
- 
 
-    transition: background-color 0.3s ease;
+    transition: transform 0.2s ease, background-color 0.2s ease;
 }
+
 
 
 .nav-links a:hover {
     background-color: rgba(159, 211, 181, 0.55);
+    transform: translateY(-7px);
 }
 
 /* ===== HEADER ===== */
@@ -101,29 +103,168 @@ button:hover {
     background-color: #8bc5a6;
 }
 
-/* ===== FORMS (QUIZ) ===== */
 
-form p {
-    font-weight: 500;
+
+/*======ABOUT PAGE ======= */
+
+
+main img {
+    display: block;
+    margin: 40px auto;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 20%;
+}
+
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-image img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+.about-text p {
+    margin-bottom: 18px;
+}
+
+.sources-heading {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.career-response p {
+    white-space: pre-line;
+}
+
+/* -------------------------------ADJUSTING---------------------- */
+.adjusting-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.challenge-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.challenge-buttons button {
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+    background-color: #92b9a1fc;
+    color: #090b0aef;
+    font-weight: 600;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.challenge-buttons button:hover {
+    background-color: #9bc7a9c0;
+    transform: translateY(-7px);
+}
+
+.solution-box {
+    display: none;
+    background-color: #9bdaa2a7;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0px 10px 30px rgb(24, 41, 24);
     margin-top: 30px;
 }
 
-input[type="radio"] {
-    margin-right: 8px;
+.solution-box h3 {
+    color: #0d100e;
+    margin-bottom: 15px;
 }
 
-/* ===== FOOTER ===== */
-
-footer {
-    text-align: center;
-    padding: 40px 20px;
-    font-size: 14px;
-    color: #6b8f7b;
+.solution-box ul {
+    margin-top: 15px;
+    padding-left: 20px;
 }
 
+.solution-box li {
+    margin-bottom: 10px;
+}
 
+/* ------------------- CSS FOR ACADEMIC PAGE -------------------- */
+/* ===== ACADEMIC HELP ===== */
 
+.academic-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
 
+.academic-intro {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
 
+.study-tools h2,
+.academic-habits h2 {
+    margin-bottom: 30px;
+    color: #2f6f4f;
+}
 
+/* TOOL CARDS */
 
+.tool-card {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+    background-color: #e7f4ec;
+    padding: 30px;
+    border-radius: 18px;
+    align-items: center;
+}
+
+.tool-text {
+    flex: 1;
+}
+
+.tool-text h3 {
+    margin-bottom: 10px;
+    color: #1f3d2b;
+}
+
+.tool-text ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.tool-text li {
+    margin-bottom: 8px;
+}
+
+/* IMAGES */
+
+.tool-image img {
+    width: 260px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
+}
+
+/* HABITS */
+
+.academic-habits ul {
+    padding-left: 20px;
+}
+
+.academic-habits li {
+    margin-bottom: 18px;
+    font-size: 16px;
+}
