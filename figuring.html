@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Figuring Out Your Career Path</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="stories.html">Stories</a></li>
+    <li><a href="academic.html">Academic Help</a></li>
+    <li><a href="adjusting.html">Adjusting to Uni Life</a></li>
+    <li><a href="figuring.html">Figuring out your career path</a></li>
+    <li><a href="which-uni.html">Which Uni should I go to?</a></li>
+    <li><a href="about.html">About</a></li>
+</ul>
+    </nav>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Figuring Out Your Career Path</h1>
+        <p>
+            You don’t need to have everything figured out.
+            This space helps you reflect on what suits you right now.
+        </p>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- QUESTIONS -->
+        <div class="career-section">
+
+            <div class="career-question">
+                <label for="learning">How do you enjoy learning most?</label>
+                <select id="learning">
+                    <option value="">Select an option</option>
+                    <option>Hands-on and practical</option>
+                    <option>A mix of theory and practice</option>
+                    <option>Mostly theory and concepts</option>
+                    <option>I’m not sure yet</option>
+                </select>
+            </div>
+
+            <div class="career-question">
+                <label for="energy">What type of tasks give you energy?</label>
+                <select id="energy">
+                    <option value="">Select an option</option>
+                    <option>Solving problems and puzzles</option>
+                    <option>Helping or working with people</option>
+                    <option>Creating or designing things</option>
+                    <option>Organising, planning, or improving systems</option>
+                    <option>I’m not sure yet</option>
+                </select>
+            </div>
+
+            <div class="career-question">
+                <label for="environment">What kind of work environment sounds most comfortable right now?</label>
+                <select id="environment">
+                    <option value="">Select an option</option>
+                    <option>Structured and predictable</option>
+                    <option>Flexible and changing</option>
+                    <option>Team-based</option>
+                    <option>Independent</option>
+                    <option>I’m not sure yet</option>
+                </select>
+            </div>
+
+            <div class="career-question">
+                <label for="values">What matters most to you at this stage of life?</label>
+                <select id="values">
+                    <option value="">Select an option</option>
+                    <option>Stability and security</option>
+                    <option>Learning and growth</option>
+                    <option>Creativity and expression</option>
+                    <option>Making a positive impact</option>
+                    <option>I’m not sure yet</option>
+                </select>
+            </div>
+
+            <div class="career-question">
+                <label for="sources">Do you know what trusted sources you can look at in NZ to find out more about your career questions?</label>
+                <select id="sources">
+                    <option value="">Select an option</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+
+        </div>
+
+        <!-- RESULTS -->
+        <div class="career-response" id="careerResponse">
+            <h2>What this might mean for you</h2>
+            <p>
+                Select options above to see a reflective summary here.
+                There are no right or wrong answers.
+            </p>
+        </div>
+
+    </main>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        const learning = document.getElementById("learning");
+        const energy = document.getElementById("energy");
+        const environment = document.getElementById("environment");
+        const values = document.getElementById("values");
+        const responseBox = document.getElementById("careerResponse");
+        const sources = document.getElementById("sources");
+
+        function updateResponse() {
+            let text = "Based on your reflections, here are some patterns you might notice:\n\n";
+
+           // Learning
+if (learning.value === "Hands-on and practical") {
+    text += "• You may do your best learning when ideas turn into action. Environments that encourage experimenting, building, or learning through experience might feel more engaging than ones that stay purely theoretical.\n";
+} else if (learning.value === "A mix of theory and practice") {
+    text += "• You might enjoy understanding the ‘why’ behind things, but only when it leads somewhere practical. Pathways that balance thinking with application could help you stay motivated and confident.\n";
+} else if (learning.value === "Mostly theory and concepts") {
+    text += "• You may enjoy exploring ideas in depth and making sense of how systems, concepts, or frameworks connect. Subjects that reward analysis and big-picture thinking could suit you well.\n";
+} else {
+    text += "• It’s okay if your learning style still feels unclear. Many students only discover what works for them after trying different approaches.\n";
+}
+
+// Energy
+if (energy.value === "Solving problems and puzzles") {
+    text += "• You might feel most engaged when you’re challenged to think critically or work through complex problems, especially when there isn’t an obvious answer straight away.\n";
+} else if (energy.value === "Helping or working with people") {
+    text += "• You may be energised by interaction, collaboration, or making a difference to others. Roles that involve communication or teamwork could feel especially meaningful.\n";
+} else if (energy.value === "Creating or designing things") {
+    text += "• You may enjoy shaping ideas into something tangible. This often points to a desire for creativity, ownership, and the freedom to explore different ways of doing things.\n";
+} else if (energy.value === "Organising, planning, or improving systems") {
+    text += "• You might enjoy bringing clarity to complexity — improving processes, spotting inefficiencies, or making systems work better over time.\n";
+} else {
+    text += "• Not knowing what energises you yet is completely normal. This often becomes clearer through experience rather than reflection alone.\n";
+}
+
+// Environment
+if (environment.value === "Team-based") {
+    text += "• You may feel supported and motivated when working alongside others, especially in environments where ideas are shared and built collectively.\n";
+} else if (environment.value === "Independent") {
+    text += "• You might prefer having space to think and work in your own way. Environments that trust you to manage your time and approach tasks independently could suit you well.\n";
+} else if (environment.value === "Structured and predictable") {
+    text += "• You may feel more comfortable when expectations are clear and routines are consistent, particularly during periods of transition or uncertainty.\n";
+} else if (environment.value === "Flexible and changing") {
+    text += "• You might enjoy environments that evolve and adapt, where no two days look the same and there’s room to pivot as you learn more.\n";
+} else {
+    text += "• Your preferred environment may shift over time — what feels right now doesn’t have to be permanent.\n";
+}
+
+// Values
+if (values.value === "Stability and security") {
+    text += "• Prioritising stability can be a grounding choice, especially when you’re navigating big decisions or new stages of life.\n";
+} else if (values.value === "Learning and growth") {
+    text += "• You may be drawn to paths that allow you to keep developing — even if they feel challenging at times. Growth-focused environments often reward curiosity and resilience.\n";
+} else if (values.value === "Creativity and expression") {
+    text += "• Feeling fulfilled may come from having space to express ideas, experiment, and approach problems in original ways.\n";
+} else if (values.value === "Making a positive impact") {
+    text += "• You may feel most motivated when your work connects to something bigger than yourself, whether that’s helping people, communities, or the wider world.\n";
+} else {
+    text += "• Your values don’t have to be fixed — they can evolve as your experiences and priorities change.\n";
+}
+
+
+            // Source
+            if(sources.value === "Yes") {
+                text += "\n<span class='sources-heading'>That's great, knowing where to look already puts you a step ahead! Here are some sources to help you if you haven't looked at them yet:</span>\n";
+                text += "• I hope my mini quiz was helpful for you, and gave you a good place to start thinking about where you want to go from here!\n";
+                text += "• <a href='https://tahatu.govt.nz/get-inspired/interest-quiz' target='_blank'>Tāhatu – Career inspiration and interest quiz</a>\n";
+                text += "• <a href='https://www.wintec.ac.nz/future-you/discover?question=1' target='_blank'>Wintec - Discover your future pathways</a>\n";
+                text += "• <a href='https://www.moneyhub.co.nz/scholarships-nz.html' target='_blank'>MoneyHub – Scholarships & support</a>\n";
+                text += "• University student hubs (including AUT and other NZ universities) can also support you throughout your study journey.\n";
+            } else if(sources.value === "No") {
+                text += "\n<span class='sources-heading'>A lot of students are in the same boat as you right now and don't know where to start...</span>\n";
+                text += "• I hope my mini quiz was helpful for you, and gave you a good place to start thinking about where you want to go from here!\n";
+                text += "• <a href='https://tahatu.govt.nz/get-inspired/interest-quiz' target='_blank'>Tāhatu – Career inspiration and interest quiz</a>\n";
+                text += "• <a href='https://www.wintec.ac.nz/future-you/discover?question=1' target='_blank'>Wintec - Discover your future pathways</a>\n";
+                text += "• <a href='https://www.moneyhub.co.nz/scholarships-nz.html' target='_blank'>MoneyHub – Scholarships & support</a>\n";
+                text += "• University student hubs (including AUT and other NZ universities) can also support you throughout your study journey.\n";
+            } else {
+                text += "";
+            }
+
+            text += "\nThese reflections aren’t final answers, they’re just a starting point.";
+
+            responseBox.querySelector("p").innerHTML = text;
+        }
+
+        learning.addEventListener("change", updateResponse);
+        energy.addEventListener("change", updateResponse);
+        environment.addEventListener("change", updateResponse);
+        values.addEventListener("change", updateResponse);
+        sources.addEventListener("change", updateResponse);
+    </script>
+
+</body>
+</html>
