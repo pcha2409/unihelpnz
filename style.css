@@ -268,3 +268,56 @@ main img {
     margin-bottom: 18px;
     font-size: 16px;
 }
+
+/* ---------------- LOAN HELP -------------------------- */
+.loan-help {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.loan-help h2 {
+    color: #2f6f4f;
+    margin-bottom: 10px;
+}
+
+.loan-help .intro {
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+
+.dropdown {
+    margin-bottom: 20px;
+}
+
+.dropdown-btn {
+    width: 100%;
+    text-align: left;
+    padding: 18px 20px;
+    font-size: 16px;
+    background-color: #9fd3b5;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.dropdown-btn:hover {
+    background-color: #c8e3c5;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #c4debb;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 12px;
+}
+
+.dropdown-content p {
+    margin-bottom: 10px;
+}
+
+.dropdown-content ul {
+    padding-left: 20px;
+}
