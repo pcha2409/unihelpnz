@@ -363,19 +363,3 @@ main img {
     color: #4a1f32;
 }
 
-/* ===== MOBILE FRIENDLY ===== */
-
-@media (max-width: 768px) {
-    .colour-section {
-        padding: 45px 30px;
-        margin: 50px 20px;
-    }
-
-    .colour-section h2 {
-        font-size: 24px;
-    }
-
-    .colour-section p {
-        font-size: 16px;
-    }
-}
